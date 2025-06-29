@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on large screens */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+}
