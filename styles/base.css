@@ -69,7 +69,7 @@ main img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     flex: 1;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .card h2 {
