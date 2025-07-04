@@ -2,6 +2,10 @@
   header{
     background-color: black;
     text-decoration: aliceblue;
-    grid-template-columns: 1fr 1fr;
-  }    
+    }
+    
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 }
