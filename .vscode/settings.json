@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "notebook.formatOnSave.enabled": true,
+    "editor.linkedEditing": true
+}
