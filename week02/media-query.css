@@ -22,13 +22,3 @@ section{
     background-color: #fff;
 }
 
-@media screen and (min-width:500px) {
-    header {
-        background-color: ;
-        color: aliceblue;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-}
