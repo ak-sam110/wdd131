@@ -1,71 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
 </head>
-
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <button id="menuBtn" class="hamburger">&#9776;</button>
-        <nav>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Temple Album</h1>
+            <button id="menuBtn" class="hamburger">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Home</h2>
         <div class="gallery">
-            <!-- Temple images -->
-            <figure>
-                <img src="images/templee.jpg" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Los Angeles Temple">
-                <figcaption>Los Angeles Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Houston Temple">
-                <figcaption>Houston Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="New York Temple">
-                <figcaption>New York Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Washington D.C. Temple">
-                <figcaption>Washington D.C. Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Orlando Temple">
-                <figcaption>Orlando Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Seattle Temple">
-                <figcaption>Seattle Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/templee.jpg" alt="Dallas Temple">
-                <figcaption>Dallas Temple</figcaption>
-            </figure>
+            <!-- Repeat the image block 9 times for your grid -->
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/templee.jpg" alt="San Diego California">
+                <div class="caption">San Diego California</div>
+            </div>
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> 🌸 SAMUEL AKINBOLA 🌸 Nigeria</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <div class="footer-content">
+            <p>&copy; <span id="year"> </span> 🌸 AKINBOLA SAMUEL OLUYEMI 🌸 Nigeria </p>
+            <br>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
-
 </html>
