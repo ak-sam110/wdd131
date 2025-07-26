@@ -1,0 +1,255 @@
+:root {
+    --primary: #C6253C;
+    --secondary: #137C3A;
+    --background: #fff;
+    --card-bg: rgba(255, 255, 255, 0.90);
+    --text: #222;
+    --accent: #FFD93B;
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+    --radius: 12px;
+    --font-main: 'Lato', Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1.3rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.03em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+.overlay-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -15%);
+}
+
+.data-card,
+.weather-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 1.5rem 0;
+    padding: 1.2rem 2rem;
+    width: 90%;
+    max-width: 420px;
+    text-align: left;
+}
+
+.data-card h2,
+.weather-card h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: var(--secondary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    position: relative;
+}
+
+.weather-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-icon-desktop {
+    display: none;
+    font-size: 1.7rem;
+    margin-left: 0.6em;
+}
+
+.weather-icon-desktop::after {
+    content: "⛅";
+    margin-left: 0.3em;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.weather-icon-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.data-card ul,
+.weather-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-card li,
+.weather-card li {
+    padding: 0.2em 0;
+    font-size: 1.08em;
+}
+
+.data-card .label,
+.weather-card .label {
+    font-weight: bold;
+}
+
+footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0 1.4rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    margin-top: 2rem;
+}
+
+.flower {
+    color: var(--accent);
+    font-size: 1.1em;
+}
+
+@media (min-width: 700px) {
+    .hero {
+        min-height: 500px;
+        height: 72vh;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .hero picture,
+    .hero img {
+        max-height: 72vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .overlay-cards {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 900px;
+        width: 100%;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .data-card,
+    .weather-card {
+        margin: 0;
+        padding: 1.7rem 2.2rem 1.7rem 2.2rem;
+        width: 350px;
+        max-width: 400px;
+        pointer-events: auto;
+    }
+
+    .data-card {
+        margin-left: 2.5vw;
+    }
+
+    .weather-card {
+        margin-right: 2.5vw;
+    }
+
+    .weather-icon-desktop {
+        display: inline;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 699px) {
+    .overlay-cards {
+        position: static;
+        transform: none;
+        margin-top: -2.7rem;
+        z-index: 2;
+    }
+
+    .data-card,
+    .weather-card {
+        width: 95%;
+        max-width: 500px;
+        margin: 1.6rem auto;
+        padding: 1.1rem 1.1rem 1.2rem 1.1rem;
+    }
+
+    .weather-icon-mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .weather-icon-desktop {
+        display: none;
+    }
+}
+
+/* Accessibility and usability */
+a,
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+:focus {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+/* for visual separation on cards */
+.data-card ul,
+.weather-card ul {
+    margin-top: 0.8rem;
+}
