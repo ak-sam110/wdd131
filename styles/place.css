@@ -165,7 +165,7 @@ footer {
     .hero img {
         max-height: 72vh;
         object-fit: cover;
-        width: 70%;
+        width: 100%;
     }
 
     .overlay-cards {
