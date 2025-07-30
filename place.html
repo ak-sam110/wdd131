@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Madagascar</title>
+    <title>Nigeria</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="script.js" defer></script>
 </head>
@@ -60,15 +60,14 @@
         </section>
     </main>
 
-    <footer>
-        <p>
-            &copy;2024 <span class="flower">🌸</span> Akinbola Samuel Oluyemi <span class="flower">🌸</span><br>
-        Nigeria
-        </p>
-        <p>
-            Last Modification: <span id="last-modified"></span>
-        </p>
-    </footer>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Samuel Akinbola, Nigeria</p>
+            <p id="lastModified"></p>
+            <script>
+                document.getElementById('lastModified').textContent = document.lastModified;
+            </script>
+        </footer>
+
 </body>
 
 </html>
