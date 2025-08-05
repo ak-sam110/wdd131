@@ -60,21 +60,21 @@ const temples = [
         location: "Independence Ave",
         dedicated: "2004 January 11",
         area: 1626,
-        imageUrl: https://churchofjesuschristtemples.org/accra-ghana-temple/
+        imageUrl: "https://churchofjesuschristtemples.org/accra-ghana-temple/photographs/#Gallery-21"
     },
     {
         templeName: "Austin Texas Temple",
         location: "East Park Steet",
         dedicated: "2022 December 19",
         area: 2787,
-        imageUrl: https://churchofjesuschristtemples.org/austin-texas-temple/
+        imageUrl: "https://churchofjesuschristtemples.org/austin-texas-temple/photographs/#Construction-1"
     },
     {
-        templeName: "Benin City Nigeria Temple",
+        templeName: "Brigham City Utah Temple",
         location: "Commercial Avenue",
         dedicated: "2020 April 5", 
         area: 2852,
-        imageUrl: https://churchofjesuschristtemples.org/benin-city-nigeria-temple/
+        imageUrl: "https://churchofjesuschristtemples.org/brigham-city-utah-temple/photographs/#Official-10"
     }
     // Add more temple objects here...
 ];
