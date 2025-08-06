@@ -75,7 +75,7 @@ const temples = [
         dedicated: "2020 April 5", 
         area: 2852,
         imageUrl: "https://churchofjesuschristtemples.org/brigham-city-utah-temple/photographs/#Official-10"
-    }
+    },
     // Add more temple objects here...
 ];
 
