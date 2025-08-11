@@ -1,0 +1,54 @@
+```css name=styles.css:root {
+    --primary: #2E8B57;
+    --secondary: #F5F5F5;
+    --accent: #FFD700;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --accent-font: 'Playfair Display', serif;
+}
+
+body {
+    background-color: var(--secondary);
+    font-family: var(--body-font);
+    color: #222;
+}
+
+header,
+nav {
+    background-color: var(--primary);
+    color: #fff;
+    font-family: var(--heading-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+.button,
+.cta {
+    background-color: var(--accent);
+    color: #222;
+    font-family: var(--heading-font);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.featured-park {
+    font-family: var(--accent-font);
+    color: var(--primary);
+    background: var(--accent);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: var(--secondary);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
