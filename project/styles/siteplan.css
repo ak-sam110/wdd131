@@ -1,10 +1,10 @@
-```css name=styles.css:root {
-    --primary: #2E8B57;
-    --secondary: #F5F5F5;
-    --accent: #FFD700;
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Roboto', sans-serif;
-    --accent-font: 'Playfair Display', serif;
+:root {
+    --primary: #0A7C4F;
+    --secondary: #F3F6F4;
+    --accent: #FFC300;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --mono-font: 'Roboto Mono', monospace;
 }
 
 body {
@@ -27,28 +27,33 @@ h3 {
     color: var(--primary);
 }
 
+img{
+    min-width: 500px;
+    max-height: 500px;
+}
+
 .button,
 .cta {
     background-color: var(--accent);
     color: #222;
     font-family: var(--heading-font);
     border: none;
-    border-radius: 5px;
-    padding: 0.5em 1em;
+    border-radius: 6px;
+    padding: 0.5em 1.2em;
 }
 
-.featured-park {
-    font-family: var(--accent-font);
-    color: var(--primary);
-    background: var(--accent);
-    padding: 1em;
-    border-radius: 8px;
-}
-
-.card {
+.product-card {
     background-color: var(--secondary);
-    border: 1px solid #ddd;
+    border: 1px solid #d1e7dd;
     border-radius: 8px;
     margin-bottom: 1em;
     padding: 1em;
+}
+
+.specs {
+    font-family: var(--mono-font);
+    color: var(--primary);
+    background: #fffbe6;
+    padding: 0.75em;
+    border-radius: 6px;
 }
