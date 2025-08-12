@@ -18,12 +18,10 @@
         </section>
     </main>
     <footer>
-        <hr>
-        <div class="footer-content">
-            <p>&copy; <span id="year"> | Product Reviews </span> 🌸 AKINBOLA SAMUEL OLUYEMI 🌸 Nigeria </p>
+            <p>&copy; <span id="year"> </span> | Product Reviews 🌸 AKINBOLA SAMUEL OLUYEMI 🌸 Nigeria </p>
             <p>Last Modification: <span id="lastModified"></span></p>
-        </div>
     </footer>
+
     <script>
         // LocalStorage review counter
         document.addEventListener('DOMContentLoaded', () => {
@@ -33,7 +31,12 @@
             document.getElementById('reviewCount').textContent =
                 `You have submitted ${count} review${count > 1 ? 's' : ''} from this browser.`;
         });
+
+        // Footer Year and Last Modified
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
     </script>
+    
 </body>
 
 </html>
