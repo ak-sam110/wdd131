@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form id="reviewForm" method="get" action="review.html" autocomplete="on">
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName">Product Name<span aria-hidden="true">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Dynamically populated by JS -->
+                </select>
+            </div>
+            <!-- Overall Rating -->
+            <fieldset class="form-group">
+                <legend>Overall Rating<span aria-hidden="true">*</span></legend>
+                <div class="rating-group">
+                    <!-- Radio buttons for rating -->
+                    <input type="radio" id="star1" name="overallRating" value="1" required>
+                    <label for="star1" aria-label="1 star">&#9733;</label>
+                    <input type="radio" id="star2" name="overallRating" value="2">
+                    <label for="star2" aria-label="2 stars">&#9733;&#9733;</label>
+                    <input type="radio" id="star3" name="overallRating" value="3">
+                    <label for="star3" aria-label="3 stars">&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star4" name="overallRating" value="4">
+                    <label for="star4" aria-label="4 stars">&#9733;&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star5" name="overallRating" value="5">
+                    <label for="star5" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </fieldset>
+            <!-- Date of Installation -->
+            <div class="form-group">
+                <label for="installDate">Date of Installation<span aria-hidden="true">*</span></label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <!-- Useful Features -->
+            <fieldset class="form-group">
+                <legend>Useful Features</legend>
+                <div class="features-group">
+                    <input type="checkbox" id="feature1" name="usefulFeatures" value="Easy Installation">
+                    <label for="feature1">Easy Installation</label>
+                    <input type="checkbox" id="feature2" name="usefulFeatures" value="Energy Efficient">
+                    <label for="feature2">Energy Efficient</label>
+                    <input type="checkbox" id="feature3" name="usefulFeatures" value="Compact Design">
+                    <label for="feature3">Compact Design</label>
+                    <input type="checkbox" id="feature4" name="usefulFeatures" value="Smart Controls">
+                    <label for="feature4">Smart Controls</label>
+                </div>
+            </fieldset>
+            <!-- Written Review -->
+            <div class="form-group">
+                <label for="writtenReview">Written Review</label>
+                <textarea id="writtenReview" name="writtenReview" rows="4"
+                    placeholder="Share your thoughts..."></textarea>
+            </div>
+            <!-- User Name -->
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Optional">
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <p>&copy; <span id="year"> | Product Reviews </span> 🌸 AKINBOLA SAMUEL OLUYEMI 🌸 Nigeria </p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+            </footer>
+</body>
+
+</html>

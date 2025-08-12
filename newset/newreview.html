@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Thank You For Your Review!</h1>
+        <section>
+            <p>Your review has been submitted successfully.</p>
+            <p id="reviewCount"></p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 Product Reviews | For educational use only. All rights reserved.</p>
+    </footer>
+    <script>
+        // LocalStorage review counter
+        document.addEventListener('DOMContentLoaded', () => {
+            let count = localStorage.getItem('reviewCount');
+            count = count ? parseInt(count, 10) + 1 : 1;
+            localStorage.setItem('reviewCount', count);
+            document.getElementById('reviewCount').textContent =
+                `You have submitted ${count} review${count > 1 ? 's' : ''} from this browser.`;
+        });
+    </script>
+</body>
+
+</html>

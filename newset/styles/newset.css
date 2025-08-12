@@ -1,0 +1,210 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    background: #390d2a;
+    padding: 2rem 0 1rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+main {
+    padding: 0;
+}
+
+.review-form {
+    background: #d3cad3;
+    border-radius: 10px;
+    margin: 1.2rem auto 0 auto;
+    padding: 1.5rem;
+    max-width: 97%;
+    width: 420px;
+    box-shadow: 0 2px 8px #0001;
+    border: 1px solid #c0b0c0;
+}
+
+.form-section {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 1.42rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    color: #222;
+}
+
+.form-note {
+    font-size: 1.08rem;
+    font-style: italic;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    border: 2px solid #e2dfe2;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #390d2a;
+}
+
+.rating-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.star-label {
+    display: block;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.rating-row input[type="radio"] {
+    appearance: none;
+    width: 2.1rem;
+    height: 2.1rem;
+    border: 2px solid #444;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: 0.1rem;
+    margin-right: -2.1rem;
+    /* overlays circle below star */
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.rating-row input[type="radio"]:checked {
+    border-color: #390d2a;
+    background: #fbf2ff;
+}
+
+.rating-row input[type="radio"]:focus {
+    border-color: #f9a825;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 0.2rem;
+}
+
+.features-list input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.35rem;
+    accent-color: #390d2a;
+}
+
+.features-list label {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.optional {
+    color: #2121b7;
+    font-size: 1.08rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.9rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    background: #e3e1e3;
+    color: #222;
+    border: 2px solid #b9b6b9;
+    border-radius: 6px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 0.3rem;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #fff;
+    border-color: #390d2a;
+}
+
+footer {
+    background: #390d2a;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0 0.5rem 0;
+    font-size: 1.18rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.flower {
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .review-form {
+        width: 98%;
+        padding: 0.7rem;
+        font-size: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .form-label,
+    .features-list label {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.3rem;
+    }
+}

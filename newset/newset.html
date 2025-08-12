@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/newset.css">
+    <script src="newscript.js" defer > </script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="review-form" method="get" action="review.html" autocomplete="on">
+            <div class="form-section">
+                <!-- Product Name -->
+                <label for="productName" class="form-label">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                    <!-- options added by JS -->
+                </select>
+            </div>
+            <div class="form-section">
+                <!-- Overall Rating -->
+                <label class="form-label" for="overallRating1">Overall Rating</label>
+                <div class="rating-row">
+                    <input type="radio" id="overallRating1" name="overallRating" value="1" required>
+                    <label for="overallRating1" class="star-label">&#9733;</label>
+                    <input type="radio" id="overallRating2" name="overallRating" value="2">
+                    <label for="overallRating2" class="star-label">&#9733;&#9733;</label>
+                    <input type="radio" id="overallRating3" name="overallRating" value="3">
+                    <label for="overallRating3" class="star-label">&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="overallRating4" name="overallRating" value="4">
+                    <label for="overallRating4" class="star-label">&#9733;&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="overallRating5" name="overallRating" value="5">
+                    <label for="overallRating5" class="star-label">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </div>
+            <div class="form-section">
+                <!-- Date of Installation -->
+                <label for="installDate" class="form-label">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <div class="form-section">
+                <!-- Useful Features -->
+                <label class="form-label">Which features did you find useful in the product?<br>
+                    <span class="form-note">(Check all that apply)</span>
+                </label>
+                <div class="features-list">
+                    <div>
+                        <input type="checkbox" id="featureDurability" name="features" value="Durability">
+                        <label for="featureDurability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="featureEase" name="features" value="Ease of Use">
+                        <label for="featureEase">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="featurePerformance" name="features" value="Performance">
+                        <label for="featurePerformance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="featureDesign" name="features" value="Design">
+                        <label for="featureDesign">Design</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <!-- Written Review -->
+                <label for="writtenReview" class="form-label">
+                    Written Review <span class="optional">(Optional)</span>
+                </label>
+                <textarea id="writtenReview" name="writtenReview" rows="5"></textarea>
+            </div>
+            <div class="form-section">
+                <!-- User Name -->
+                <label for="userName" class="form-label">
+                    Your Name <span class="optional">(Optional)</span>
+                </label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div class="form-section">
+                <button type="submit" class="submit-btn">Post Review</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>
+                &copy;2024 <span class="flower">&#127800;</span> Rubia Magdelena Francesco <span
+                    class="flower">&#127800;</span><br>
+                Madagascar<br>
+                Last Modification: 02/26/2024 13:56:10
+            </p>
+        </div>
+    </footer>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
