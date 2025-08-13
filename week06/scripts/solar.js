@@ -4,28 +4,28 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 // Testimonials Data (images must be optimized and in images/ folder)
 const testimonials = [
     {
-        name: "Aisha Bello",
-        image: "images/myself.webp",
+        name: "Mr Sam",
+        image: "../images/myself.webp",
         quote: "Dartun delivered beyond my expectations. My home is now powered efficiently and reliably.",
-        location: "Lagos"
+        location: "Ibadan"
     },
     {
-        name: "James Okoro",
-        image: "images/testimonial2.jpg",
+        name: "The Akinbola",
+        image: "../images/fami.webp",
         quote: "Professional service and excellent support. Highly recommend Dartun for solar solutions.",
+        location: "Oyo"
+    },
+    {
+        name: "Mr Tobi",
+        image: "../images/testimonial3.webp",
+        quote: "The inverter installation was smooth, and my energy bills are much lower now.",
         location: "Abuja"
     },
     {
-        name: "Fatima Yusuf",
-        image: "images/testimonial3.jpg",
-        quote: "The inverter installation was smooth, and my energy bills are much lower now.",
-        location: "Kaduna"
-    },
-    {
-        name: "Emeka Nwosu",
-        image: "images/testimonial4.jpg",
+        name: "Mum Akinbola",
+        image: "../images/testimonial4.webp",
         quote: "Reliable products and quick maintenance response. Thank you Dartun!",
-        location: "Enugu"
+        location: "Lagos"
     }
 ];
 
@@ -35,7 +35,7 @@ function renderTestimonials() {
     if (!container) return;
     container.innerHTML = testimonials.map(t =>
         `<div class="testimonial">
-      <img src="${t.image}" alt="Photo of ${t.name}" width="64" height="64" loading="lazy">
+      <img src="${t.image}" alt="Photo of ${t.name}" width="40" height="40" loading="lazy">
       <blockquote>"${t.quote}"</blockquote>
       <cite>${t.name}, ${t.location}</cite>
     </div>`
