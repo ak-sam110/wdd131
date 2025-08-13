@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Dartun Solar Inverter Sales and Services - Sustainable power solutions for homes and businesses.">
+    <title>Dartun Solar Inverter Sales and Services</title>
+    <link rel="stylesheet" href="styles/solar.css">
+    <script src="script/solar.js" defer> </script>
+    <link rel="icon" href="../images/dartunsolarlogo.webp" type="image/webp">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <img src="../images/dartunsolarlogo.webp" alt="Dartun Solar Logo" class="logo" width="60" height="60">
+            <h1>Dartun Solar Inverter Sales and Services</h1>
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="solar.html">Solar Solutions</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact" class="cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" aria-label="Mi
+        ssion and Vision">
+            <div class="hero-content">
+                <h2>Empowering Your Future with Clean, Reliable Energy</h2>
+                <p>Our mission is to deliver innovative solar inverter solutions that drive sustainable progress for
+                    homes and businesses. Our vision is a world powered by renewable energy, where everyone enjoys
+                    efficient, affordable, and reliable power.</p>
+                <div class="cta-buttons">
+                    <button onclick="showQuoteForm()">Get a Quote</button>
+                    <button onclick="scrollToSection('solar')">View Solar Panels</button>
+                    <button onclick="scrollToSection('testimonials')">See Testimonials</button>
+                    <button onclick="showContactForm()">Contact Us</button>
+                </div>
+            </div>
+            <img src="../images/imagehero.webp" alt="Solar panels in sunlight" width="480" height="320" loading="eager">
+        </section>
+        <section id="solar" class="solar-panels" aria-label="Solar Panel Solutions">
+            <h3>Solar Panel Solutions</h3>
+            <div class="solar-grid">
+                <figure>
+                    <img src="../images/imagehero2.webp" alt="High-efficiency solar panel" width="320" height="220"
+                        loading="lazy">
+                    <figcaption>High-Efficiency Solar Panels</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/inverter.webp" alt="Rooftop solar inverter system" width="320" height="220"
+                        loading="lazy">
+                    <figcaption>Rooftop Inverter Systems</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/solaroffgrid.webp" alt="Off-grid solar setup" width="320" height="220" loading="lazy">
+                    <figcaption>Off-Grid Solutions</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials" aria-label="Customer Testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial-list">
+                <!-- Testimonials will be inserted dynamically via JS -->
+            </div>
+        </section>
+        <section id="quote-form-section" class="form-section hidden" aria-label="Quote Request Form">
+            <h3>Request a Free Quote</h3>
+            <form id="quote-form" autocomplete="on" novalidate>
+                <label for="name">Name<span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                <label for="email">Email<span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <label for="service">Service Needed<span aria-hidden="true">*</span></label>
+                <select id="service" name="service" required>
+                    <option value="">Choose one</option>
+                    <option value="solar-panel">Solar Panel Installation</option>
+                    <option value="inverter-repair">Inverter Repair</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+                <label for="details">Details</label>
+                <textarea id="details" name="details" maxlength="300" placeholder="Describe your needs..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-feedback" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 2025 | Dartun Solar Inverter Sales and Services | . All rights reserved.</p>
+        <p> Last Modification: <span id="lastModified"></span> </p>
+        <script>document.getElementById('lastModified').textContent = document.lastModified;</script>
+        <address>
+            Contact: <a href="mailto:info@dartunsolar.com">info@dartunsolar.com</a> | Phone: <a
+                href="tel:+2348105187893"> +2348105187893 </a>
+        </address>
+
+    </footer>
+
+</body>
+
+</html>

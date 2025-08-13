@@ -5,7 +5,7 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 const testimonials = [
     {
         name: "Aisha Bello",
-        image: "images/testimonial1.jpg",
+        image: "images/myself.webp",
         quote: "Dartun delivered beyond my expectations. My home is now powered efficiently and reliably.",
         location: "Lagos"
     },
