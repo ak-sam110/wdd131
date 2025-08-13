@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services - Dartun Solar Inverter Sales and Services</title>
+    <link rel="stylesheet" href="styles/solar.css">
+    <script src="script/solar.js" defer> </script>
+    <link rel="icon" href="../images/dartunsolarlogo.webp" type="image/webp">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <img src="../images/dartunsolarlogo.webp" alt="Dartun Solar Logo" class="logo" width="60" height="60">
+            <h1>Dartun Solar Inverter Sales and Services</h1>
+            <ul class="nav-list">
+                <li><a href="solar.html">Home</a></li>
+                <li><a href="dartun.html">Solar Solutions</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="#contact" class="cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services-list" aria-label="Our Services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Solar Panel Installation</h3>
+                    <p>Expert installation of solar panels for residential and commercial properties using the latest
+                        technology and standards.</p>
+                </li>
+                <li>
+                    <h3>Inverter Sales & Repair</h3>
+                    <p>Wide range of inverters available. Professional repair and maintenance services for optimal
+                        performance.</p>
+                </li>
+                <li>
+                    <h3>System Maintenance</h3>
+                    <p>Comprehensive maintenance packages to ensure your solar systems run smoothly and efficiently all
+                        year round.</p>
+                </li>
+                <li>
+                    <h3>Energy Consulting</h3>
+                    <p>Personalized consulting to help you choose the best sustainable energy solutions for your
+                        specific needs.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="cta-section">
+            <button onclick="showQuoteForm()">Get a Service Quote</button>
+            <button onclick="showContactForm()">Contact Us</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Dartun Solar Inverter Sales and Services. All rights reserved.</p>
+        <p> Last Modification: <span id="lastModified"></span> </p>
+    </footer>
+        <script>document.getElementById('lastModified').textContent = document.lastModified;</script>
+</body>
+
+</html>

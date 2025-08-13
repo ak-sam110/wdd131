@@ -1,0 +1,421 @@
+:root {
+    --primary: #045d56;
+    --secondary: #e7c309;
+    --background: #fffbe6;
+    --accent: #2596be;
+    --nav-bg: #f7f9fa;
+    --text: #212529;
+    --cta: #e7c309;
+    --cta-hover: #ffe066;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --radius: 0.5rem;
+    --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header,
+nav,
+footer {
+    width: 100%;
+}
+
+header {
+    background: var(--nav-bg);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    border-radius: 50%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0 1rem 0 0;
+    flex: 1 1 200px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    transition: background 0.2s;
+}
+
+.nav-list li a:hover,
+.nav-list li a[aria-current="page"] {
+    background: var(--accent);
+    color: #fff;
+}
+
+.cta {
+    background: var(--cta);
+    color: #fff !important;
+    border-radius: var(--radius);
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    transition: background 0.2s;
+}
+
+.cta:hover {
+    background: var(--cta-hover);
+    color: var(--primary) !important;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(90deg, #fffbe6 60%, #e7c30912 100%);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+}
+
+.hero-content {
+    flex: 1 1 300px;
+}
+
+.hero h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.hero p {
+    max-width: 480px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cta-buttons button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background 0.2s;
+}
+
+.cta-buttons button:hover {
+    background: var(--primary);
+}
+
+.hero img {
+    flex: 1 1 300px;
+    width: 100%;
+    max-width: 480px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    min-width: 280px;
+}
+
+.solar-panels,
+.solar-info {
+    margin-bottom: 2rem;
+}
+
+.solar-panels h3,
+.solar-info h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.solar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.solar-grid figure {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.solar-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.solar-grid figcaption {
+    padding: 0.7rem;
+    font-weight: 500;
+}
+
+.services-list h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.services-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-list li {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+}
+
+.cta-section {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.cta-section button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background 0.2s;
+}
+
+.cta-section button:hover {
+    background: var(--primary);
+}
+
+.testimonials {
+    margin-bottom: 2rem;
+}
+
+.testimonials h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.testimonial {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    margin: 0 0 0.7rem 0;
+}
+
+.testimonial cite {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.form-section {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-section.hidden {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.6rem;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    background: #f9f9f9;
+}
+
+form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background: var(--accent);
+}
+
+#form-feedback {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+footer {
+    background: var(--nav-bg);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 2px solid var(--secondary);
+    margin-top: 3rem;
+}
+
+footer address {
+    font-style: normal;
+    color: var(--text);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .hero img {
+        max-width: 100%;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        padding: 1rem 0.3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .solar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-list {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        padding: 1rem 0.2rem;
+    }
+}
