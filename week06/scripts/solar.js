@@ -4,14 +4,14 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 // Testimonials Data (images must be optimized and in images/ folder)
 const testimonials = [
     {
-        name: "Mr Sam",
-        image: "../images/myself.webp",
+        name: "Mr Dare",
+        image: "../images/dartun.webp",
         quote: "Dartun delivered beyond my expectations. My home is now powered efficiently and reliably.",
         location: "Ibadan"
     },
     {
-        name: "The Akinbola",
-        image: "../images/fami.webp",
+        name: "Mr Yemi",
+        image: "../images/myself.webp",
         quote: "Professional service and excellent support. Highly recommend Dartun for solar solutions.",
         location: "Oyo"
     },
